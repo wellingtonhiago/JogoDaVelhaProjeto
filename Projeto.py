@@ -1,20 +1,10 @@
-cells = input("Enter cells: ")
-cells_permitidas = ["O", "X", "_"]
+cells = list(input())
 
-
-line1 = cells[0:3].split()
-line2 = cells[3:6].split()
-line3 = cells[6:9].split()
-
-line1 = " ".join(line1)
-line2 = " ".join(line2)
-line3 = " ".join(line3)
-
-print(f'''---------
-| {" ".join(line1)} |
-| {" ".join(line2)} |
-| {" ".join(line3)} |
----------''')
+print("---------")
+print("|", cells[0], cells[1], cells[2], "|")
+print("|", cells[3], cells[4], cells[5], "|")
+print("|", cells[6], cells[7], cells[8], "|")
+print("---------")
 
 
 
